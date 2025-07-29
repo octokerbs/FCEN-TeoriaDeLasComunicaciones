@@ -1,0 +1,30 @@
+{
+  "embeds": {
+    "padding": 0,
+    "showBg": false,
+    "showBgDots": false
+  },
+  "fileDestinations": {
+    "confirmDestination": false,
+    "assetsFolder": "tldraw/assets",
+    "destinationMethod": "default-folder",
+    "defaultFolder": "assets",
+    "colocationSubfolder": ""
+  },
+  "file": {
+    "insertTags": true
+  },
+  "saveFileDelay": 0.5,
+  "newFilePrefix": "Tldraw ",
+  "newFileTimeFormat": "YYYY-MM-DD h.mmA",
+  "toolSelected": "hand",
+  "themeMode": "light",
+  "gridMode": true,
+  "snapMode": true,
+  "debugMode": false,
+  "focusMode": false,
+  "workspace": {
+    "tldrMarkdownViewType": "tldraw-view",
+    "switchMarkdownView": true
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "promptDelete": false,
+  "vimMode": true,
+  "showInlineTitle": true,
+  "readableLineLength": true,
+  "strictLineBreaks": false,
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "assets"
+}
