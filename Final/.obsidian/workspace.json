@@ -8,17 +8,13 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1fa40a07eee41296",
+            "id": "d1d4c6eeb8b51cc6",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Data Link Layer.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Data Link Layer"
+              "title": "New tab"
             }
           }
         ]
@@ -167,17 +163,17 @@
       "tldraw:Create new tldrawing": false
     }
   },
-  "active": "1fa40a07eee41296",
+  "active": "d1d4c6eeb8b51cc6",
   "lastOpenFiles": [
     "Preguntas.md",
+    "Application Layer.md",
     "Apuntes.md",
     "Data Link Layer.md",
-    "Application Layer.md",
+    "Network Layer.md",
+    "Physical Layer.md",
     "Transport Layer.md",
     "Session Layer.md",
     "Presentation Layer.md",
-    "Physical Layer.md",
-    "Network Layer.md",
     "assets/Pasted image 20250725125843.png",
     "assets/Pasted image 20250725124643.png",
     "assets/Pasted image 20250725124226.png",
