@@ -11,10 +11,14 @@
             "id": "d1d4c6eeb8b51cc6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Application Layer.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Application Layer"
             }
           }
         ]
@@ -154,6 +158,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -165,9 +170,9 @@
   },
   "active": "d1d4c6eeb8b51cc6",
   "lastOpenFiles": [
+    "Apuntes.md",
     "Preguntas.md",
     "Application Layer.md",
-    "Apuntes.md",
     "Data Link Layer.md",
     "Network Layer.md",
     "Physical Layer.md",
