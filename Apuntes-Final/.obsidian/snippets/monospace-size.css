@@ -1,0 +1,6 @@
+/* Adjusts both inline and block code */
+.cm-s-obsidian span.cm-inline-code,
+.cm-s-obsidian .HyperMD-codeblock,
+.markdown-preview-view code {
+    font-size: 14px !important;
+}

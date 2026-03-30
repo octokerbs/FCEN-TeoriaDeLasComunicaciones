@@ -4,21 +4,49 @@
     "type": "split",
     "children": [
       {
-        "id": "b3714154c370b212",
+        "id": "a1bf3881e54ba258",
         "type": "tabs",
         "children": [
           {
-            "id": "d1d4c6eeb8b51cc6",
+            "id": "c349c4136abcc038",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Application Layer.md",
+                "file": "1. Physical Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Application Layer"
+              "title": "1. Physical Layer"
+            }
+          },
+          {
+            "id": "c709bcd747ded841",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6. Presentation Layer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6. Presentation Layer"
+            }
+          },
+          {
+            "id": "bcce0c86f63a6c2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "6.5 Security Layer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6.5 Security Layer"
             }
           }
         ]
@@ -78,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 281.5
   },
   "right": {
     "id": "6bdf83ce866ca22b",
@@ -165,57 +193,57 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "tldraw:Create new tldrawing": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "d1d4c6eeb8b51cc6",
+  "active": "c349c4136abcc038",
   "lastOpenFiles": [
-    "Apuntes.md",
-    "Preguntas.md",
-    "Application Layer.md",
-    "Data Link Layer.md",
-    "Network Layer.md",
-    "Physical Layer.md",
-    "Transport Layer.md",
-    "Session Layer.md",
-    "Presentation Layer.md",
-    "assets/Pasted image 20250725125843.png",
-    "assets/Pasted image 20250725124643.png",
-    "assets/Pasted image 20250725124226.png",
-    "assets/Pasted image 20250724172850.png",
-    "assets/Pasted image 20250724163047.png",
-    "assets/Pasted image 20250724161405.png",
-    "assets/Pasted image 20250724155953.png",
-    "assets/Tldraw 2025-07-24 2.55PM.md",
-    "Excalidraw/Drawing 2025-07-24 14.18.10.excalidraw.md",
-    "assets/Pasted Image 20250724142414_453.png",
-    "assets/Pasted Image 20250724142123_068.png",
-    "Excalidraw",
-    "assets/Pasted image 20250724110446.png",
-    "Final del 26-07-2024.md",
+    "6. Presentation Layer.md",
+    "6.5 Security Layer.md",
+    "0. Information Layer.md",
+    "1. Physical Layer.md",
+    "7. Application Layer.md",
+    "5. Session Layer.md",
+    "4. Transport Layer.md",
+    "3. Network Layer.md",
+    "2. Data Link Layer.md",
+    "Respuestas.md",
+    "drawings/Drawing 2026-03-30 19.39.39.excalidraw.md",
+    "Notas/2. Generacion Automatica de Tests.md",
+    "drawings/Drawing 2026-03-29 05.13.09.excalidraw.md",
+    "Notas/1. Mutantes y Cobertura.md",
+    "drawings/Drawing 2026-03-16 19.47.19.excalidraw.md",
+    "1. Generación Automática + Cobertura + Mutation Analysis.md",
+    "assets/Pasted image 20260316222429.png",
+    "assets/Pasted image 20260316222323.png",
     "assets",
-    "FreeRTOS Naming Conventions.md",
-    "FreeRTOS Heap Memory Managment.md",
-    "Modelo OSI.md",
-    "FreeRTOS Tasks.md",
-    "FreeRTOS Projects.md",
-    "FreeRTOS Project Layout.md",
-    "FreeRTOS Scheduler.md",
-    "Human Nature.md",
-    "I love you, I hate you.md",
-    "Micro-controller.md",
-    "C essentials.md",
-    "Bonds.md",
-    "FreeRTOS.md",
-    "Repository/Categories.md",
-    "Untitled.canvas",
-    "Metadata",
-    "Old Notes/SoftwareDesign",
-    "Old Notes/Java",
-    "Old Notes/Essays",
-    "Old Notes/Deep Learning/assets",
-    "Old Notes/Deep Learning",
-    "Old Notes/Body Recomposition",
-    "Old Notes/Articulation"
+    "drawings",
+    "Logo.png",
+    "Practicas",
+    "Talleres",
+    "Teoricas",
+    "drawings/Drawing 2026-03-16 16.39.48.excalidraw.md",
+    "Axoft/TiposComprobantesIIBB.md",
+    "Axoft/Flujo.md",
+    "Axoft/Apuntes.md",
+    "Axoft/Código.md",
+    "Axoft/Migraciones.md",
+    "drawings/Drawing 2026-03-16 12.55.26.excalidraw.md",
+    "drawings/Drawing 2026-03-16 06.19.02.excalidraw.md",
+    "Excalidraw/Template.md",
+    "4. Capa de Transporte.md",
+    "Excalidraw",
+    "diagrams",
+    "Excalidraw",
+    "4. Capa de Transporte.md.tmp.154562.1773642895286",
+    "Computer Networks A Systems Approach by Larry L. Peterson, Bruce S. Davie (z-lib.org).pdf",
+    "assets/Pasted image 20260204223137.png",
+    "assets/Pasted image 20260204223122.png",
+    "assets/7dfdf910-323a-4a89-a7f1-15579febe70e-tldrawFile.png",
+    "assets/Pasted image 20250920200109.png",
+    "assets/Pasted image 20250915025620.png",
+    "assets/Pasted image 20250914232648.png",
+    "assets/Pasted image 20250725125843.png",
+    "Untitled.canvas"
   ]
 }

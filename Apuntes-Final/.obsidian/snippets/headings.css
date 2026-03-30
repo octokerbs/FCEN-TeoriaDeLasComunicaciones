@@ -1,0 +1,41 @@
+/* snippet: match editing view spacing more closely */
+
+/* Headings spacing in reading view */
+.markdown-preview-view h1,
+.markdown-preview-view h2,
+.markdown-preview-view h3,
+.markdown-preview-view h4,
+.markdown-preview-view h5,
+.markdown-preview-view h6 {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+    /* possibly reduce line-height if needed */
+    line-height: 1.2em !important;
+}
+
+/* Adjust paragraph spacing */
+.markdown-preview-view p {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+/* When printing / exporting to PDF */
+@media print {
+
+    /* Could use same rules or a subset */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+        line-height: 1.2em !important;
+    }
+
+    p {
+        margin-top: 0.5em !important;
+        margin-bottom: 0.5em !important;
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "cssTheme": "Minimal",
+  "accentColor": "",
+  "baseFontSize": 20,
+  "showViewHeader": false,
+  "showRibbon": true,
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "headings",
+    "center-embeds",
+    "monospace-size"
+  ],
+  "textFontFamily": "Charter",
+  "monospaceFontFamily": "JetBrainsMono Nerd Font"
+}

@@ -1,0 +1,18 @@
+/* Center all embeds */
+.internal-embed {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Center image embeds specifically */
+.image-embed img {
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Center the paragraph wrapper too */
+p:has(> .internal-embed) {
+  text-align: center;
+}
