@@ -1,0 +1,56 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: tdc-prep-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: tdc_prep
+      POSTGRES_USER: tdc
+      POSTGRES_PASSWORD: tdc_dev
+    ports:
+      - "5433:5432" # host:container — keeps localhost:5433 working for tools.
+    volumes:
+      - tdc_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U tdc -d tdc_prep"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tdc-prep-app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      # Inside the compose network the DB is reachable at `postgres:5432`,
+      # overriding whatever DATABASE_URL is in `.env` (which uses localhost:5433
+      # for direct host access).
+      DATABASE_URL: postgresql://tdc:tdc_dev@postgres:5432/tdc_prep?schema=public
+      NODE_ENV: development
+      WATCHPACK_POLLING: "true" # reliable hot-reload through bind mounts on macOS.
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      # Bind-mount the project source for hot reload.
+      - .:/app
+      # Anonymous volumes mask host node_modules / .next so the container uses
+      # its own (Linux-built) artifacts instead of the host ones (Darwin-built).
+      - /app/node_modules
+      - /app/.next
+    # On boot: ensure schema is applied → seed → start dev server.
+    command: >
+      sh -c "npx prisma db push --skip-generate &&
+             npx prisma generate &&
+             npx tsx prisma/seed.ts &&
+             npm run dev"
+
+volumes:
+  tdc_pg:

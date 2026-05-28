@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+@import "katex/dist/katex.min.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #1e1e1e;
+  --bg-subtle: #252525;
+  --bg-surface: #2a2a2a;
+  --bg-elevated: #303030;
+  --bg-border: #3a3a3a;
+  --fg: #f5f5f5;
+  --fg-muted: #bdbdbd;
+  --fg-subtle: #8a8a8a;
+  --fg-faint: #5c5c5c;
+  --accent-red: #f4a5a5;
+  --accent-blue: #a5c8f4;
+  --accent-green: #a5e6b1;
+}
+
+* {
+  border-color: var(--bg-border);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(165, 200, 244, 0.28);
+  color: var(--fg);
+}
+
+/* Quiet scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: #4a4a4a; }
+
+/* ---------- Editorial reading style (Medium-like) ---------- */
+.prose-tdc {
+  /* Charter is bundled on macOS; the chain degrades gracefully elsewhere. */
+  font-family: "Charter", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  color: #e6e6e6;
+  font-size: 19px;
+  line-height: 1.72;
+  letter-spacing: -0.003em;
+  /* Wider measure for reading — closer to Medium's ~80ch. */
+  max-width: 80ch;
+}
+
+.prose-tdc h1,
+.prose-tdc h2,
+.prose-tdc h3,
+.prose-tdc h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: -0.018em;
+}
+
+.prose-tdc h2 {
+  margin-top: 2.75rem;
+  margin-bottom: 0.85rem;
+  font-size: 1.65rem;
+  line-height: 1.25;
+  padding-top: 0.25rem;
+}
+
+.prose-tdc h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.55rem;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  color: var(--accent-blue);
+}
+
+.prose-tdc h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  color: #ffffff;
+}
+
+.prose-tdc p {
+  margin-bottom: 1.4rem;
+  color: #e6e6e6;
+}
+
+.prose-tdc a {
+  color: var(--accent-blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(165, 200, 244, 0.4);
+}
+.prose-tdc a:hover {
+  text-decoration-color: var(--accent-blue);
+}
+
+.prose-tdc code {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.86em;
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
+  padding: 0.1em 0.42em;
+  border-radius: 4px;
+  color: var(--accent-green);
+}
+
+.prose-tdc pre {
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
+  border-radius: 8px;
+  padding: 1.05rem 1.15rem;
+  overflow-x: auto;
+  font-size: 0.85em;
+  margin: 1.35rem 0;
+  line-height: 1.55;
+}
+.prose-tdc pre code {
+  background: transparent;
+  border: none;
+  padding: 0;
+  color: var(--fg);
+}
+
+.prose-tdc ul,
+.prose-tdc ol {
+  margin-bottom: 1.4rem;
+  padding-left: 1.65rem;
+}
+.prose-tdc ul { list-style-type: disc; }
+.prose-tdc ol { list-style-type: decimal; }
+.prose-tdc li {
+  margin-bottom: 0.55rem;
+  color: #e6e6e6;
+}
+.prose-tdc li::marker { color: var(--fg-subtle); }
+
+.prose-tdc blockquote {
+  border-left: 3px solid var(--accent-red);
+  background: rgba(244, 165, 165, 0.06);
+  padding: 0.9rem 1.15rem;
+  margin: 1.4rem 0;
+  color: #e6e6e6;
+  font-style: italic;
+  border-radius: 0 4px 4px 0;
+}
+
+.prose-tdc strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.prose-tdc em {
+  color: #f0f0f0;
+}
+
+.prose-tdc hr {
+  border-color: var(--bg-border);
+  margin: 2.5rem 0;
+}
+
+.prose-tdc table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4rem 0;
+  font-size: 0.93em;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.prose-tdc th,
+.prose-tdc td {
+  border: 1px solid var(--bg-border);
+  padding: 0.6rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+}
+.prose-tdc th {
+  background: var(--bg-surface);
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* KaTeX inline math — slightly larger than body for legibility. */
+.prose-tdc .katex {
+  font-size: 1.05em;
+  color: #f5f5f5;
+}
+
+/* KaTeX display math — center, breathe, and gently set off from text. */
+.prose-tdc .katex-display {
+  margin: 2.4rem auto;
+  padding: 1.4rem 1rem;
+  background: rgba(245, 245, 245, 0.025);
+  border-top: 1px solid rgba(165, 200, 244, 0.18);
+  border-bottom: 1px solid rgba(165, 200, 244, 0.18);
+  border-radius: 0;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.prose-tdc .katex-display > .katex {
+  font-size: 1.28em;
+  letter-spacing: 0.005em;
+  display: inline-block;
+}
+.prose-tdc .katex-display + p {
+  margin-top: 1.5rem;
+}
+
+/* When `\textcolor{}{}` is used inside KaTeX, the resulting color is preserved
+   so colored variables (red/blue/green) read crisp against the dark backdrop. */
+.prose-tdc .katex .mord,
+.prose-tdc .katex .mbin,
+.prose-tdc .katex .mrel {
+  color: inherit;
+}
+
+/* Soft pastel highlight on the first paragraph of each section gives a Medium-ish lift. */
+.prose-tdc h2 + p::first-letter {
+  font-size: 1.05em;
+  color: #ffffff;
+}
+
+/* Display family for hero / nav uses */
+.font-display {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.022em;
+}
+
+/* Subtle backdrop pattern (kept minimal; not on reading pages) */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(58, 58, 58, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(58, 58, 58, 0.35) 1px, transparent 1px);
+  background-size: 36px 36px;
+  background-position: -1px -1px;
+}
